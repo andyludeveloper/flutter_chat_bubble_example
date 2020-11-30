@@ -59,22 +59,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-
-  Widget drawItem2(int index, BuildContext context) {
-    return Row(mainAxisSize: MainAxisSize.max, children: [
-      Container(
-        width: MediaQuery.of(context).size.width / 2,
-        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-        decoration: BoxDecoration(
-            color: Colors.blueAccent,
-            borderRadius: BorderRadius.all(Radius.circular(20.0))),
-        alignment:
-            messages[index].isMe ? Alignment.centerRight : Alignment.centerLeft,
-        child: Text(
-          messages[index].message,
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
-    ]);
-  }
 }
